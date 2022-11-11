@@ -1,0 +1,322 @@
+* {
+ font-family: 'Poppins', sans-serif;
+ font-family: 'Rubik', sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+:root {
+    --ElementsColor: #3782ec;
+    --MainColor: #1D1B1B;
+}
+
+header {
+    display: flex;
+    padding: 10px 200px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: var(--MainColor);
+    position: fixed;
+    height: 50px;
+
+}
+
+body {
+    background: url(wallpaperflare.com_wallpaper\ \(5\).jpg) ;
+    background-position: right center;
+    background-size: cover;
+    /* background-size: 100vh; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--ElementsColor);
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+header nav a:hover {
+    color: white;
+    font-size: 14px;
+}
+
+.head {
+    color: var(--ElementsColor);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+
+section {
+    padding: 300px 200px;
+}
+
+section span {
+    color: var(--ElementsColor);
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+section h2,
+h3 {
+    margin-top: 30px;
+    margin-bottom: 30px ;
+    color: white;
+    font-size: 1.3em;
+}
+
+.btn {
+    font-size: 1.2em;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--ElementsColor);
+    border: 2px solid var(--ElementsColor);
+    transition: 0.4s;
+    display: block;
+    width: 150px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border: 2px solid white;
+    color: white;
+    font-size: 1.3em;
+    margin-left: -5px;
+    /* margin-top: -5px; */
+    width: 160px;
+}
+
+.main {
+    background-color: var(--MainColor);
+    padding: 50px 100px;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: var(--ElementsColor);
+}
+
+.main .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .cards .card {
+    transition: 0.3s;
+    margin: 20px 30px;
+    width: 300px;
+    min-height: 200px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.406);
+}
+
+.main .cards .card i  {
+    font-size: 8em;
+    color: var(--ElementsColor);
+}
+
+.main .cards .card .content .p {
+    color: white;
+    line-height: 1.6;
+}
+
+.main .cards .card .content h2 {
+    font-size: 1.4em;
+    color: var(--ElementsColor);
+}
+
+.main .cards .card:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    transition: 0.4s;
+    margin: 20px 10px;
+    font-size: 1.4em;
+    color: var(--ElementsColor);
+}
+
+.projects {
+    background-color: #0c0c0c;
+    padding: 50px 290px;
+}
+
+.image-card {
+    transition: 0.4s;
+    width: 300px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+    min-height: 230px;
+}
+
+.image-card:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.image-card .image img {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+
+.image-card .info span {
+    font-size: 1.3em;
+
+}
+
+.image-card .info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 50px;
+}
+
+.image-card .info a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--ElementsColor);
+}
+
+
+.image-card .info a:hover {
+    color: purple;
+}
+
+.title-img {
+    font-size: 1.1em;
+    padding-left: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 600px;
+}
+
+.p-1 {
+    font-size: 1.2em;
+}
+
+.content .hh {
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-title {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer .footer-title span {
+    text-transform: capitalize;
+    color: var(--ElementsColor);
+}
+
+i:hover {
+    color: white;
+}
+
+@media (max-width: 1023px){
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px 30px;
+    }
+
+    header nav {
+        width: 50%
+    }
+
+    header nav a {
+        font-size: 1em ;
+    }
+
+    section{
+        padding: 100px 30px;
+    }
+    
+    .main {
+        padding: 50px 50px;
+    }
+
+    .projects {
+        padding: 50px 30px;
+    }
+
+    .main .cards {
+        flex-direction: column;
+        min-width: 300px;
+        justify-content: center;
+        padding: 10px;
+    }
+    .main .cards .card {
+        width: 200px;
+        margin: 20px 40px;
+    }
+
+    .projects {
+        padding: 20px 50px;
+
+    }
+
+    .projects .cards {
+        min-width: 200px;
+        margin: 10px;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .projects .cards .image-card {
+        width: 200px;
+        text-align: center;
+        min-height: 160px;
+    }
+    .image-card .info {
+        padding: 5px;
+        height: 20px;
+    }
+    .p-1 {
+        font-size: 0.9em;
+    }
+    footer .footer-title  {
+        padding: 10px;
+        font-size: 1.1em;
+    }
+    footer div {
+        height: 50px;
+    }
+}
